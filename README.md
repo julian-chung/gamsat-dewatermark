@@ -1,10 +1,10 @@
 # gamsat-dewatermark
 
-A short script to remove personal watermarks from ACER GAMSAT practice test PDFs. The watermarks (name, DOB, email) are embedded diagonally across each page and interfere with selecting and copying text.
+A short script to remove personal watermarks from ACER GAMSAT preparation PDFs. The watermarks (name, DOB, email) are embedded diagonally across each page and interfere with selecting and copying text.
 
 ## How it works
 
-Rather than using rectangle-based redaction (which destroys content underneath diagonal text), the script performs surgery directly on the PDF content stream — locating and removing the `q...Q` graphics state block that contains the watermark, leaving everything else untouched.
+Rather than using rectangle-based redaction (which destroys content underneath diagonal text), the script edits the PDF content stream — locating and removing the `q...Q` graphics state block that contains the watermark, leaving everything else untouched.
 
 ## Usage
 
